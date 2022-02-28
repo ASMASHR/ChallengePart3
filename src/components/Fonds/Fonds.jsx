@@ -22,11 +22,7 @@ function Fonds() {
 
   return (
     <div className='Fonds'>
-      <div className="Linkdiv">
-      <Link to='/Home'> ACCUEIL</Link>
-        <div className="circle"></div> 
-       <div className="after">NOS FOND</div> 
-      </div>
+      
       <div className="top">
         <div className="ImgRow">
         <div className="imgContainer">
@@ -47,7 +43,7 @@ function Fonds() {
       </div>
       <div className="bottom">
         <div className="TitreCon">
-          <p className='titreF'>Optimiser</p> <p className='titreF'>Votre  Fiscalité!</p> 
+          <p className='titreF'>Optimisez</p> <p className='titreF'>Votre  Fiscalité!</p> 
         </div>
         <div className="alternatives">
           <div className="left">

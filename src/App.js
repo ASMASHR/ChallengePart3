@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Fonds/>
-      {/* <Contact/> */}
+      <Contact/>
       <Responsabilities/>
       {/* <Realisations/> */}
     </div>

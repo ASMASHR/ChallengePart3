@@ -1,3 +1,5 @@
+@import "../../../global.scss";
+
 .OddsContainer{
     display: flex;
     flex-direction: column;
@@ -36,50 +38,5 @@
     }
 }
 
-@keyframes showCard {
-    0% {
-        opacity: 0;
-        transform: rotateY(-80deg);
-    }
 
-    13% {
-        opacity: 1;
-        transform: rotateY(-70deg);
-    }
-
-    25% {
-        opacity: 1;
-        transform: rotateY(-60deg);
-    }
-
-    35% {
-        opacity: 1;
-        transform: rotateY(-50deg);
-    }
-
-    50% {
-        opacity: 1;
-        transform: rotateY(-40deg);
-    }
-
-    65% {
-        opacity: 1;
-        transform: rotateY(-30deg);
-    }
-
-    80% {
-        opacity: 1;
-        transform: rotateY(-20deg);
-    }
-
-    95% {
-        opacity: 1;
-        transform: rotateY(-10deg);
-    }
-
-    100% {
-        opacity: 2;
-        transform: rotateY(0deg);
-    }
-}
 }

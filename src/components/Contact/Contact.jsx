@@ -25,7 +25,9 @@ function Contact() {
         <div className="contactContainer">
          
         <div className='contact' id="contact">
-            <h2>Contactez Nous</h2>
+            <div className="TitreCon">
+          <p className='titreF'>Contactez Nous</p>
+        </div>
                 <div className="coordonnees">
                     <div className="address"><LocationOnIcon className='Icon'/> <p>Siège social, Imm. El Emtiez. Centre Urbain Nord, 1003, Tunis.</p></div>   
                     <div className="Telephone"><LocalPhoneIcon className='Icon'/> <p>(+216) 71 238 729  /   (+216) 71 233342</p> </div>

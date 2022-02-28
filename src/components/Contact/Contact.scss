@@ -23,12 +23,29 @@
          @include mobile {
             padding: 2vw;
          }
-            h2{
-                font-size: 30px;
-                font-weight: 800;
-                color: rgb(95, 95, 95);
-                margin-left: 2vw
-            }
+.TitreCon {
+    display: flex;
+    height: 10vw;
+    font-size: 82px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    .titreF {
+
+        animation: leftIn 2s ease-in;
+        text-shadow: 3px 2px rgb(180, 180, 180);
+        margin-right: 1vw;
+
+        @include mobile {
+            font-size: 30px;
+            animation: none
+        }
+
+    }
+}
         .coordonnees{
          
             padding-left: 2vw;
@@ -41,6 +58,7 @@
             width: 40%;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             padding: 1px;
+            animation: showCard 1s ease-in-out;
              @include mobile {
                 width: 90%;
              }
@@ -71,7 +89,7 @@
 
         }
         .contactUs {
-      
+      animation: showCard 1s ease-in-out;
             display: flex;
             width: 60%;
             height: 500px;
@@ -168,6 +186,59 @@ margin-bottom: 1vw;
                  }
             }
         }
+        }
+    }
+    @keyframes leftIn {
+        0% {
+            opacity: 0;
+        }
+
+        12% {
+            font-size: 52px;
+            color: rgb(161, 161, 161);
+        }
+
+        25% {
+            font-size: 62px;
+            color: rgb(119, 118, 118);
+        }
+
+        35% {
+            font-size: 72px;
+            color: rgb(107, 105, 105);
+
+        }
+
+        50% {
+            font-size: 82px;
+            font-weight: 700;
+            color: rgb(68, 66, 66);
+
+        }
+
+        65% {
+            font-size: 82px;
+            font-weight: 700;
+            color: rgb(107, 105, 105);
+
+        }
+
+        75% {
+            font-size: 82px;
+            font-weight: 700;
+            color: rgb(100, 99, 99);
+        }
+
+        90% {
+            font-size: 82px;
+            font-weight: 700;
+            color: rgb(78, 77, 77);
+        }
+
+        100% {
+            font-size: 82px;
+            font-weight: 700;
+            color: rgb(29, 28, 28);
         }
     }
     }

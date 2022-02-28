@@ -1,0 +1,433 @@
+@import "../../../global.scss";
+.Fonds{
+    height: auto;
+    .Linkdiv{
+        margin:2vw;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        font-style: italic;
+        a{
+            color: black;
+            text-decoration: none;
+            margin-right: 10px;
+       
+        }
+         a:hover{
+            text-decoration: underline;
+            color: rgb(190, 62, 62);
+        }
+        .circle{
+            height: 7px;
+            width: 7px;
+            background-color: black;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        .ImgRow{
+            display: flex;
+            height: 23vw;
+            justify-content: space-evenly;
+            @include mobile {
+                flex-wrap: wrap;
+                margin-bottom: 5px;
+            }
+                .imgContainer{
+            margin: 1vw;
+            animation: showCard 1s ease-in-out;
+           
+            img{
+                height: 18vw;
+                width: 18vw;
+                  @include mobile {
+                      height: 20vw;
+                      width: 20vw;
+
+                  }
+                 
+           }
+        }  
+        }
+        
+       
+    }
+    .bottom{
+        margin: 2vw;
+        display: flex;
+        flex-direction: column;
+        .TitreCon{
+            display: flex;
+            height: 10vw;
+            font-size: 82px;
+            font-weight: 700;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        .titreF {
+        
+            animation:leftIn 2s ease-in;
+            text-shadow: 3px 2px rgb(180, 180, 180);
+            margin-right: 1vw;
+             @include mobile {
+                 font-size:30px ;
+                 animation:none
+             }
+           
+        }
+}
+        .alternatives{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1vw;
+            padding: 5px;
+            .left,.right{
+                 @include mobile {
+                 height: 25vw;
+                 width: 40vw;
+                 }
+               height: 20vw;
+                width: 30vw;
+                // background-color: rgb(119, 49, 49);
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                animation: showCard 1s ease-in-out;
+                .base{
+                    width: 90%;
+                    line-height: 40px;  
+                    font-size:25px;
+                    text-align: center;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: rgb(2, 94, 199);
+             @include mobile {
+                 font-size:16px;
+                 line-height: 22px;
+                 width: 100%;
+             }
+                }
+            .hovred{
+                
+                height: 90%;
+                position: absolute;
+                align-items: center;
+                padding: 20px 20px;
+                margin: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.144);
+                text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.3);
+                display: flex;
+                justify-content: space-evenly;
+                opacity: 0;
+                p{
+                    font-size: 23px;
+                    font-style: italic;
+                    line-height: 40px;
+                      @include mobile {
+                          font-size: 17px;
+                          line-height: 19px;
+                          width: 100%;
+
+                      }
+                }
+
+            }
+            .hovred:hover{
+                background-color: #fff;
+                opacity: 1;
+                
+            }
+            }
+        }
+        .avantages{
+            display: flex;
+            margin: 2vw;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+            
+            .advTitre{
+                  @include mobile {
+                      margin-top: 4vw;
+                      font-size: 27px;
+                      line-height: 19px;
+                      
+
+                  }
+                font-size: 62px;
+                height: 7vw;
+                font-weight: 700;
+                
+                text-shadow: 3px 2px rgb(180, 180, 180);
+                margin-right: 1vw;
+                    -webkit-animation-delay: 1s;
+                    -moz-animation-delay: 1s;
+                    animation-delay: 1s;
+            }
+            .AllContainer{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+              @include mobile {
+               flex-wrap: wrap;
+              }
+                .avContainer{
+                width: 27%;
+                height: 20vw;
+                padding: 7px;
+                justify-items: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                color: rgb(247, 252, 252);
+                background-color: rgb(23, 76, 252);
+                border-radius: 3vw;
+                  @include mobile {
+                      width: 50%;
+                      margin: 10px;
+                      height: 70%;
+
+                  }
+                .titre{
+                    height: 20%;
+                    margin-top: 2vw;
+                    font-size: 27px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                      @include mobile {
+                          font-size: 15px;
+                          line-height: 19px;
+                          width: 100%;
+
+                      }
+                }
+                .body{
+                    padding: 5px;
+                    line-height: 30px;
+                      @include mobile {
+                          font-size: 14px;
+                          line-height: 22px;
+                          width: 100%;
+
+                      }
+
+                }
+            }
+
+        }
+    }
+    }
+@keyframes showCard {
+    0% {
+        opacity: 0;
+          transform: rotateY(-80deg);
+    }
+      13% {
+          opacity: 1;
+          transform: rotateY(-70deg);
+      }
+    25% {
+        opacity: 1;
+        transform: rotateY(-60deg);
+    }
+      35% {
+          opacity: 1;
+          transform: rotateY(-50deg);
+      }
+    50%{
+        opacity: 1;
+         transform: rotateY(-40deg);
+    }
+      65% {
+          opacity: 1;
+          transform: rotateY(-30deg);
+      }
+    80% {
+        opacity: 1;
+        transform: rotateY(-20deg);
+    }
+
+      95% {
+          opacity: 1;
+          transform: rotateY(-10deg);
+      }
+    100%{
+        opacity: 2;
+         transform: rotateY(0deg);
+    }
+}
+@keyframes leftIn {
+    0% {
+    opacity: 0;
+    }
+     12% {
+         font-size: 52px;
+         color:rgb(161, 161, 161) ;
+     }
+
+ 25% {
+    font-size: 62px;
+    color:rgb(119, 118, 118);
+ }
+  35% {
+      font-size: 72px;
+      color:rgb(107, 105, 105);
+     
+  }
+
+ 50% {
+     font-size: 82px;
+      font-weight: 700;
+     color:rgb(68, 66, 66);
+    
+ }
+  65% {
+       font-size: 82px;
+        font-weight: 700;
+       color:rgb(107, 105, 105);
+     
+  }
+
+ 75% {
+     font-size: 82px;
+    font-weight: 700;
+    color:rgb(100, 99, 99);
+ }
+ 90% {
+     font-size: 82px;
+     font-weight: 700;
+     color:rgb(78, 77, 77);
+ }
+
+    100% {
+        font-size: 82px;
+      font-weight: 700;
+       color:rgb(29, 28, 28);
+    }
+}
+
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    transition-delay:3s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        opacitX: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+          -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+          }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+}

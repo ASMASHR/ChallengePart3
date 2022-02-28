@@ -1,0 +1,85 @@
+.OddsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+   background-color: rgb(196, 196, 196);
+
+    .Container{
+        display: flex;
+       margin:1vw;
+       height: 15vw;
+
+     .imgContainer{
+        display: flex;
+        width: 56%;
+        align-items: center;
+        flex-direction: column;
+        img{
+            
+            height: 100%;
+            width: 100%;
+            animation: showCard 1s ease-in-out;
+        }
+
+    }
+    .OddInfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        line-height: 29px;
+        padding: 1vw;
+        color: rgb(247, 247, 247);
+        background-color: rgb(16, 101, 211);
+    }
+}
+
+@keyframes showCard {
+    0% {
+        opacity: 0;
+        transform: rotateY(-80deg);
+    }
+
+    13% {
+        opacity: 1;
+        transform: rotateY(-70deg);
+    }
+
+    25% {
+        opacity: 1;
+        transform: rotateY(-60deg);
+    }
+
+    35% {
+        opacity: 1;
+        transform: rotateY(-50deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotateY(-40deg);
+    }
+
+    65% {
+        opacity: 1;
+        transform: rotateY(-30deg);
+    }
+
+    80% {
+        opacity: 1;
+        transform: rotateY(-20deg);
+    }
+
+    95% {
+        opacity: 1;
+        transform: rotateY(-10deg);
+    }
+
+    100% {
+        opacity: 2;
+        transform: rotateY(0deg);
+    }
+}
+}

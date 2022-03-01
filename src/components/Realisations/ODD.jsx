@@ -176,7 +176,7 @@ const ODD = () => {
           </div>
         
         <div className="OddInfo fadeIn fourth">
-          <p> La STB SICAR promeut une gouvernance responsable auprès des entreprises en portefeuille et veille à la mise en place des comités d’audit, de rémunération, de risques, …etc lorsque la taille le permet.",
+          <p> La STB SICAR promeut une gouvernance responsable auprès des entreprises en portefeuille et veille à la mise en place des comités d’audit, de rémunération, de risques, …etc lorsque la taille le permet.
           </p>  
         </div>
         </div>

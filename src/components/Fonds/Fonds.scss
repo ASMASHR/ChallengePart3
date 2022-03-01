@@ -1,6 +1,23 @@
 @import "../../../global.scss";
 .Fonds{
     height: auto;
+        .TitreCon {
+            display: flex;
+            height: 10vw;
+            font-size: 82px;
+            font-weight: 700;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+            .titreF {
+
+                animation: leftIn 2s ease-in;
+                text-shadow: 3px 2px rgb(180, 180, 180);
+                margin-right: 1vw;
+            }
+        }
     .Linkdiv{
         margin:2vw;
         font-size: 16px;

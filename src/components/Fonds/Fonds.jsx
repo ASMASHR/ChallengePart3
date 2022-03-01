@@ -22,7 +22,9 @@ function Fonds() {
 
   return (
     <div className='Fonds'>
-      
+      <div className="TitreCon">
+            <p className="titreF">  Nos Fonds</p>
+      </div>
       <div className="top">
         <div className="ImgRow">
         <div className="imgContainer">
